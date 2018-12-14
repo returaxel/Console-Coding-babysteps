@@ -1,110 +1,98 @@
 
-## Konsolkunskap
+## It begins with the console
 
-	* cli vs. gui
-	* navigera (cd, ls, tree)
-	* starta program från PS
-	* stäng av program från PS
-	* miljövariabler och variabler
-	* skapa, döp, flytta, kopiera och radera mappar och filer
-	* skriv data till fil
+	In this our very first session we need to first go over some fundamentals before
+	we get to writing some code. A programmer benefits tremendously from having some
+	prerequisite knowledge of how the console in a computer works, and being able to
+	navigate, copy, move and change files or directories(read:folders) from a
+	command line shell. This will make troubleshooting simple programs and testing
+	our code much more intuitive. You'll also become less fearful of the scary black
+	window and feel more confident using a computer. You might even enjoy the console
+	over the GUI if you're like me! 
 
-	# uppgifter:
+	* CLI & GUI - What does it mean?
+	* navigate in the console (cd, ls, tree)
+	* start programs from the console
+	* stop programs and processes from the console
+	* environment variables
+	* create, rename, move and delete files
+	* write data to files
 
-	* skapa en mapp på ditt skrivbord
-	* skriv ditt namn och dagens datum till en fil i mappen
-	* kopiera filen i mappen till skrivbordet
-	* radera mappen med filen inuti
+	# Assignments:
 
-## Tillfälle 1: introduktion till programmering
+	* Create a folder with any name on your desktop
+	* write your computer username in the contents of the file.
+	* append your file with any sentence.
+	* remove the folder with the file inside.
+
+	Need help? Type "man" OR "help" "<command>" for assistance in how to type your 
+	command. For example: 'man ls', 'man rm', 'help cd'
+
+## Session 1: Intro to programming
 	
-	* Installera miljön
-	* Börja med print()
-		- print('Hello world')
-	
-	* Vad är en variabel? 
-		- = vs ==
+	In this session we'll cover the very start and initial basics of why we program
+	computers the way we do, how it is done and what happens behind the scenes in a
+	short format. We will cover some concepts and terms in programming, including but
+	not exclusive to: 
+
+	* Quick dive in binary numbers, what they mean and how to read them
+	* What is a variable? 
+		- '=' vs '=='
 		- input()
-		- string concatenation, var = 3. var += 1
+		- string concatenation
 		- type(foo)
 
-	* datatyper
+	* datatypes
 		- str
 		- int
-		- list
-		- tuple
 		- float
-		- dict
-		- set
 
-	# uppgifter:
+	# Assignments:
 
-	DEMO: skapa ett program som frågar ditt för och efternamn och skriver ut det på skärmen.
-	DEMO: skapa ett program som ger dig en e-post adress baserat på namn, efternamn och domän.
+	DEMO: Write a program that asks for your name and prints it out to the screen with a greeting.
+	DEMO: Write a program that concatenates your first and last name with a provided email domain.
 
-	Uppgift: skapa ett program som ger dig ordinalen för bokstäver du skriver till programmet
-	Uppgift: skapa ett program som ger dig bokstaven för ordinalen du skriver till programmet
+	Assignments:
+	Replicate from DEMO.
 
 
-## Tillfälle 2: logiskt control flow
+## Session 2: logic control flow
 
 	* logical operators
 		- logical operators:
-			and, or, not, xor, <, >, <=, >=, ==, !=, %
+		and, or, not, xor, <, >, <=, >=, ==, !=, %
 	
-	* if / elif / else
+	* if, elif, else
 		- if 1 == 0 (do something)
 		- if foo == bar or foo == foofoo
 		- if foo != bar and bar != 0
+		- if foo >= bar or bar >= x
 
 
-	# uppgifter:
+	# Assignments:
 	
-	DEMO: skapa ett program som skriver ut om ett tal är ett primtal eller ej
-	DEMO: skapa ett lotteriprogram 
+	DEMO: Write a program that tells you whether or not a given number is even
+	DEMO: Write a number guessing game program
+
+	Assignments:
+	Replicate from DEMO but modify the even number program to give you only odd numbers
+
+
+## Session 3: loops
+
+	* loops
+		- for loops
+		- while loops
+
 	
-	Uppgift: skapa ett program som förstår om du skriver på engelska eller inte.
-	(isalpha && ord >= && <= 97 122)
+	# Assignments:
+	
+	DEMO: Write a program that can count to 100 and print to a box-like format.
+	DEMO: Write a program that can print seconds like a clock for x seconds.
+	
+	Write a program that tells you if a number is a prime number or not, using for loops and modulo.
 
 
+## Session 4: 
 
-## Tillfälle 3:
-
-	* loopar
-	- for loops
-	- while loops
-
-	* Boolean statements
-
-	# uppgifter:
-	* skapa ett program som räknar sekunder i en halv minut
-
-	DEMO:
-		* skapa ett program som frågar efter 10 tal. Programmet ska ha en meny med följande val:
-		
-		1 Mata in 10 tal
-		2 Visa alla tal
-		3 Visa det minsta talet
-		4 Visa det största talet
-		5 Avsluta
-
-		* programmet skriver du med hjälp av följande tekniker:
-		 - Initiera en meny med print() och ta in valen från användaren
-		 - med en for loop, bygg upp alternativ 1 där inmatningen läggs till i en array
-		 - med din array full, kalla på print() metoden för alla i listan.
-		 - med din array full, kalla på min() och max() metoden.
-
-
-## Tillfälle 5: binär matematik i programmering
-
-	- bitwise operators och binära tal
-		| & 
-		- 128 64 32 16 4 2 (visa bild)
-		- konvertera sträng till ordinal
-		- räkna ut vad ordinalen av a är i binärt tal 
-
-	# uppgift:
-	* skapa ett program som konverterar en mening till binära tal.
-		programmet ska ha en meny
-		programmet ska kunna konvertera tillbaka det till text
-		programmet ska kunna fortsätta i oändlighet, och gå att avsluta i menyn
+	TODO
