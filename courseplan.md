@@ -34,9 +34,27 @@
 	computers the way we do, how it is done and what happens behind the scenes in a
 	short format. We will cover some concepts and terms in programming, including but
 	not exclusive to: 
+    
+	What is a variable? 
+	How is a program executed by the computer?
+	what is binary and why is it used in computer science?
 
-	* Quick dive in binary numbers, what they mean and how to read them
-	* What is a variable? 
+	DEMO: Write a program that asks for your name and prints it out to the screen 
+	with a greeting.
+	DEMO: Demonstrate the difference between int() and float() datatype. 
+	DEMO: Demonstrate how Python 3 behaves with arithmetic and datatypes.
+
+
+	Assignments:
+	Replicate from DEMO.
+
+## Session 2: Data types
+
+	Programming languages use different data types for different purposes.
+	In this session we will take a look at them and see what they specialize in.
+
+	* string concatenation
+	
 		- '=' vs '=='
 		- input()
 		- string concatenation
@@ -46,17 +64,14 @@
 		- str
 		- int
 		- float
+		- complex
 
 	# Assignments:
 
-	DEMO: Write a program that asks for your name and prints it out to the screen with a greeting.
-	DEMO: Write a program that concatenates your first and last name with a provided email domain.
+	DEMO: Write a program that concatenates your first and last name with a domain.
+	DEMO: Write a program that concatenates your first and last name with your birthday
 
-	Assignments:
-	Replicate from DEMO.
-
-
-## Session 2: logic control flow
+## Session 3: logic control flow
 
 	* logical operators
 		- logical operators:
@@ -78,7 +93,9 @@
 	Replicate from DEMO but modify the even number program to give you only odd numbers
 
 
-## Session 3: loops
+
+
+## Session 4: loops
 
 	* loops
 		- for loops
@@ -93,6 +110,11 @@
 	Write a program that tells you if a number is a prime number or not, using for loops and modulo.
 
 
-## Session 4: 
+## Session 5: 
 
 	TODO
+
+26
+23
+21
+18
