@@ -26,14 +26,14 @@ does this for you. If you want to take in the numbers as integers however, you n
 In this case, the input will be stored in var and the type will be int().
 String + string is True! To add content to a string, simply do:
 
-	foo = 'Hello '
-	foo += 'World!'
+	foo = 'Hakuna '
+	foo += 'Matata'
 	print(foo)
-	>>> Hello World!
+	>>> Hakuna Matata
 the '+=' operand is equal to saying:
 
-	foo = 'Hello '
-	foo = foo + 'World!'
+	foo = 'Hakuna '
+	foo = foo + 'Matata'
 We just discard the 'foo = foo +...' way of doing it.
 
 # Keep it simple
