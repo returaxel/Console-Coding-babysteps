@@ -5,9 +5,9 @@ The program will then print it out on the screen.
 
 Example output:
 
-	>>> What's your name? **Bruce**
-	>>> What's your lastname? **Wayne**
-	>>> What's your phone number? **0701111222**
+	>>> What's your name? Bruce
+	>>> What's your lastname? Wayne
+	>>> What's your phone number? 0701111222
 	Your name is Bruce Wayne and your phone number is 0701111222.
 
 # TIP!
