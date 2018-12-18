@@ -8,7 +8,7 @@ Example output:
 	>>> What's your name?
 	>>> What's your lastname? 
 	>>> What's your phone number?
-	Your name is Simon Olofsson and your phone number is 0701111222.
+	Your name is Bruce Wayne and your phone number is 0701111222.
 
 # TIP!
 ## Use input() to ask user for values. 
