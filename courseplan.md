@@ -28,6 +28,8 @@ over the GUI if you're like me!
 Need help? Type "man" OR "help" "<command>" for assistance in how to type your 
 command. For example: 'man ls', 'man rm', 'help cd'
 
+
+
 # Session 1: Intro to programming
 	
 In this session we'll cover the very start and initial basics of why we program
@@ -46,6 +48,8 @@ DEMO: Demonstrate how Python 3 behaves with arithmetic and datatypes.
 
 ## Assignments:
 See "Homework" folder in this repository.
+
+
 
 # Session 2: Data types
 
@@ -67,11 +71,13 @@ In this session we will take a look at them and see what they specialize in.
 ## Assignments:
 See "Homework" folder in this repository.
 
+
+
 # Session 3: logic control flow
 
 * logical operators
 	- logical operators:
-	and, or, not, xor, <, >, <=, >=, ==, !=, %
+	and, or, not, <, >, <=, >=, ==, !=, %
 
 * if, elif, else
 	- if 1 == 0 (do something)
@@ -81,6 +87,8 @@ See "Homework" folder in this repository.
 
 ## Assignments:
 See "Homework" folder in this repository.
+
+
 
 # Session 4: loops
 
