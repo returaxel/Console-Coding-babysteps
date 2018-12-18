@@ -10,13 +10,13 @@ our code much more intuitive. You'll also become less fearful of the scary black
 window and feel more confident using a computer. You might even enjoy the console
 over the GUI if you're like me! 
 
-# CLI & GUI - What does it mean?
-# navigate in the console (cd, ls, tree)
-# start programs from the console
-# stop programs and processes from the console
-# environment variables
-# create, rename, move and delete files
-# write data to files
+* CLI & GUI - What does it mean?
+* navigate in the console (cd, ls, tree)
+* start programs from the console
+* stop programs and processes from the console
+* environment variables
+* create, rename, move and delete files
+* write data to files
 
 # Assignments:
 
