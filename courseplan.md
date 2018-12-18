@@ -1,5 +1,5 @@
 
-## It begins with the console
+# It begins with the console
 
 In this our very first session we need to first go over some fundamentals before
 we get to writing some code. A programmer benefits tremendously from having some
@@ -18,7 +18,7 @@ over the GUI if you're like me!
 * create, rename, move and delete files
 * write data to files
 
-# Assignments:
+## Assignments:
 
 * Create a folder with any name on your desktop
 * write your computer username in the contents of the file.
@@ -28,7 +28,7 @@ over the GUI if you're like me!
 Need help? Type "man" OR "help" "<command>" for assistance in how to type your 
 command. For example: 'man ls', 'man rm', 'help cd'
 
-## Session 1: Intro to programming
+# Session 1: Intro to programming
 	
 In this session we'll cover the very start and initial basics of why we program
 computers the way we do, how it is done and what happens behind the scenes in a
@@ -44,10 +44,10 @@ DEMO: Demonstrate the difference between int() and float() datatype.
 DEMO: Demonstrate how Python 3 behaves with arithmetic and datatypes.
 
 
-#Assignments:
+## Assignments:
 See "Homework" folder in this repository.
 
-## Session 2: Data types
+# Session 2: Data types
 
 Programming languages use different data types for different purposes.
 In this session we will take a look at them and see what they specialize in.
@@ -64,10 +64,10 @@ In this session we will take a look at them and see what they specialize in.
 	- float
 	- complex
 
-# Assignments:
+## Assignments:
 See "Homework" folder in this repository.
 
-## Session 3: logic control flow
+# Session 3: logic control flow
 
 * logical operators
 	- logical operators:
@@ -79,16 +79,16 @@ See "Homework" folder in this repository.
 	- if foo != bar and bar != 0
 	- if foo >= bar or bar >= x
 
-# Assignments:
+## Assignments:
 See "Homework" folder in this repository.
 
-## Session 4: loops
+# Session 4: loops
 
 * loops
 - for loops
 - while loops
 
-# Assignments:
+## Assignments:
 
 DEMO: Write a program that can count to 100 and print to a box-like format.
 DEMO: Write a program that can print seconds like a clock for x seconds.
@@ -96,6 +96,6 @@ DEMO: Write a program that can print seconds like a clock for x seconds.
 Write a program that tells you if a number is a prime number or not, using for loops and modulo.
 
 
-## Session 5: 
+# Session 5: 
 
 	TODO
