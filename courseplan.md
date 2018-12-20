@@ -26,22 +26,22 @@ These are all ran in PowerShell, but most of them are identical on Mac, Linux an
 	
 	mkdir 'foldername here'
 
-This will tell you where you are.
+**This will tell you where you are.**
 
 	pwd
 
-This will let you navigate. 
+**This will let you navigate.** 
 
 	cd
 	example: cd.. (backwards)
 	cd foldername\foldername\foldername
 	cd \ 
 
-This will show you what is a directory. 
+**This will show you what is a directory.** 
 
 	ls
 
-To see another directory where you are not currently in,
+**To see another directory where you are not currently in,**
 
 	ls c:\foldername\foldername
 
