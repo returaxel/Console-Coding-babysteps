@@ -18,7 +18,7 @@ over the GUI if you're like me!
 * create, rename, move and delete files
 * write data to files
 
-## Practice commands**
+## Practice commands
 Try to use your new skills. Below you can see me repeating some of the commands.
 These are all ran in PowerShell, but most of them are identical on Mac, Linux and Unix.
 
