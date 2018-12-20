@@ -22,7 +22,7 @@ over the GUI if you're like me!
 Try to use your new skills. Below you can see me repeating some of the commands.
 These are all ran in PowerShell, but most of them are identical on Mac, Linux and Unix.
 
-create a new folder **Make directory**:
+**Make a new directory**:
 	
 	mkdir 'foldername here'
 
