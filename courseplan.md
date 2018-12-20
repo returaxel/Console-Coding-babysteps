@@ -48,7 +48,7 @@ These are all ran in PowerShell, but most of them are identical on Mac, Linux an
 	
 ## Assignments:
 
-Create a directory with any name on your desktop
+**Create a directory with any name on your desktop**
 	
 	cd $env:userprofile\desktop
 	mkdir 'NameYourFolder'
@@ -57,19 +57,19 @@ Create a directory with any name on your desktop
 
 	mkdir $env:userprofile\desktop\my_directory
 
-Write your username in a file inside the folder.
+**Write your username in a file inside the folder.**
 	
 	cd $env:userprofile\desktop\my_directory
 	"My name is $env:username and I made this file from the console." > myfile.txt
 
-Open the file with **cat** or with notepad to see that it worked.
+**Open the file with 'cat' or with notepad to see that it worked.**
 
 	cat $env:userprofile\desktop\my_directory\myfile.txt
 	--OR--
 	$env:userprofile\desktop\my_directory\myfile.txt
 	--OR--
 
-Append your file with any sentence. Try both commands to see how they differ. (> vs >>)
+**Append your file with any sentence. Try both commands to see how they differ. (> vs >>)**
 
 	the '>>' operand in console command means append. That is, it puts the text you write
 	under what is already in the file. If you only use '>', you will replace all content
