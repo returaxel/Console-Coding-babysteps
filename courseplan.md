@@ -34,15 +34,9 @@ These are all ran in PowerShell, but most of them are identical on Mac, Linux an
 
 	cd
  
- 
-
 	cd .. (backwards)
  
- 
-
 	cd foldername\foldername\foldername
-
- 
 
 	cd \ 
 
@@ -59,9 +53,7 @@ These are all ran in PowerShell, but most of them are identical on Mac, Linux an
 **Create a directory with any name on your desktop**
 	
 	cd $env:userprofile\desktop
-
  
-
 	mkdir 'NameYourFolder'
 
 --OR--
@@ -71,8 +63,6 @@ These are all ran in PowerShell, but most of them are identical on Mac, Linux an
 **Write your username in a file inside the folder.**
 	
 	cd $env:userprofile\desktop\my_directory
-
- 
 
 	"My name is $env:username and I made this file from the console." > myfile.txt
 
