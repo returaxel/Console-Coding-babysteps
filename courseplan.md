@@ -33,54 +33,69 @@ These are all ran in PowerShell, but most of them are identical on Mac, Linux an
 **This will let you navigate.** 
 
 	cd
-	example: cd.. (backwards)
+ 
+ 
+
+	cd .. (backwards)
+ 
+ 
+
 	cd foldername\foldername\foldername
+
+ 
+
 	cd \ 
 
-**This will show you what is a directory.** 
+**This will show you what is in a directory.** 
 
 	ls
 
 **To see another directory where you are not currently in,**
 
 	ls c:\foldername\foldername
-
 	
 ## Assignments:
 
 **Create a directory with any name on your desktop**
 	
 	cd $env:userprofile\desktop
+
+ 
+
 	mkdir 'NameYourFolder'
 
-	--OR--
+--OR--
 
 	mkdir $env:userprofile\desktop\my_directory
 
 **Write your username in a file inside the folder.**
 	
 	cd $env:userprofile\desktop\my_directory
+
+ 
+
 	"My name is $env:username and I made this file from the console." > myfile.txt
 
 **Open the file with 'cat' or with notepad to see that it worked.**
 
 	cat $env:userprofile\desktop\my_directory\myfile.txt
-	--OR--
+
+--OR--
+
 	$env:userprofile\desktop\my_directory\myfile.txt
-	--OR--
 
 **Append your file with any sentence. Try both commands to see how they differ. (> vs >>)**
 
-	the '>>' operand in console command means append. That is, it puts the text you write
-	under what is already in the file. If you only use '>', you will replace all content
-	in the file with what you type. This is critical to remember as you can end up
-	losing valuable data if you don't do this right. 
+The '>>' operand in console command means append. That is, it puts the text you write
+under what is already in the file. If you only use '>', you will replace all content
+in the file with what you type. This is critical to remember as you can end uplosing 
+valuable data if you don't do this right. 
 
-	To append your file:
+To append your file:
 
 	"This is another line in my file" >> $env:userprofile\desktop\my_directory\myfile.txt
 
-	To erase all content and write to the file:
+To overwrite the file leaving only one line of data which is what you type:
 
 	"This is another line in my file" > $env:userprofile\desktop\my_directory\myfile.txt
 
@@ -134,10 +149,7 @@ See "Homework" folder in this repository.
 	and, or, not, <, >, <=, >=, ==, !=, %
 
 * if, elif, else
-	- if 1 == 0 (do something)
-	- if foo == bar or foo == foofoo
-	- if foo != bar and bar != 0
-	- if foo >= bar or bar >= x
+* nested if statements
 
 ## Assignments:
 See "Homework" folder in this repository.
