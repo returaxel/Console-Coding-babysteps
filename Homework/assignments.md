@@ -86,9 +86,9 @@ too high or too low in your guess. Not very nice. Let's be more nice.
 
 	if the guess is less than answer,
 		write 'Too low!'
-	but if the guess is higher than answer,
+	but the guess is higher than answer,
 		write 'Too high'
-	and if the guess is equal to answer,
+	otherwise,
 		write 'Correct!'
 
 See the difference? Now, you are using your if clause to give feedback, helping the user hit the right target.
