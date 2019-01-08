@@ -55,8 +55,6 @@ You need to know the following concepts first:
 
 ### if / elif / else statements
 
-### The following logical operators:<   <=   >=   =   == operands
-
 * Difference between int() and str()
 
 ## If you get stuck
