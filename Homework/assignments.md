@@ -55,7 +55,7 @@ You need to know the following concepts first:
 
 ### if / elif / else statements
 
-### <   <=   >=   =   == operands
+### The following logical operators:<   <=   >=   =   == operands
 
 * Difference between int() and str()
 
@@ -76,6 +76,17 @@ In Psuedo code, one could write something like this...
 
 	if the guess is not equal to the answer,
 		write 'Sorry, wrong answer.'
+
+
+* '>' Greater than
+* '<' Less than
+* '>=' Greater than or equal
+* '<=' Less than or equal
+* '=' Assigmnent
+* '==' Equal to (Can also be written 'is')
+* '!=' Is not equal to (Can also be written 'is not')
+* 'and' At least two statements are True (Boolean)
+* 'or' One or the other statement is true (Boolean)
 
 This example will terminate the program as soon as you either hit the right
 answer OR miss it. It will also not give you any input on whether you were
