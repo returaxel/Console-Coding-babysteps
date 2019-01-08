@@ -42,3 +42,53 @@ We just discard the 'foo = foo +...' way of doing it.
 	Ask for lastname, and store it in a separate (or add it to the previous..?) variable.
 	Ask for phone number, and store it in a variable. Or... add everything to one variable, as you go!
 
+
+## Assignment 2:
+
+In this assignment, you are going to write your first console application.
+
+### The goal
+Write a program that is a number guessing program. Effectively, you are going to guess the number and your program will tell you if you got it right. 
+
+## You need to know...
+You need to know the following concepts first:
+
+* if / elif / else statements
+
+* >, <, <=, >=, = and == operands
+
+* Difference between int() and str()
+
+## If you get stuck
+If you get stuck, Google is your friend. You can always reach me on WhatsApp if you get stuck, we'll work it through together. Remember that you need to use input() to take in values from the user, and that input() will take inputs as str(). To take input as integers, use
+	
+	# foo will be of datatype int()
+	foo = int(input('Your guess?'))
+
+	# bar will be of datatype str()
+	bar = input('Your guess?')
+
+## A hint
+In Psuedo code, one could write something like this...
+
+	answer is 190
+	guess is input 'Guess my number!'
+
+	if the guess is not equal to the answer,
+		write 'Sorry, wrong answer.'
+
+This example will terminate the program as soon as you either hit the right
+answer OR miss it. It will also not give you any input on whether you were
+too high or too low in your guess. Not very nice. Let's be more nice. 
+
+	answer is 190
+	guess is input 'Guess my number!'
+
+	if the guess is less than answer,
+		write 'Too low!'
+	but if the guess is higher than answer,
+		write 'Too high'
+	and if the guess is equal to answer,
+		write 'Correct!'
+
+See the difference? Now, you are using your if clause to give feedback, helping the user hit the right target.
