@@ -75,7 +75,7 @@ In Psuedo code, one could write something like this...
 	if the guess is not equal to the answer,
 		write 'Sorry, wrong answer.'
 
-### In Python, these are the logical operands you can practice in this excercise:
+### In Python, these are the logical operators you can practice in this excercise:
 
 * '>' Greater than
 * '<' Less than
