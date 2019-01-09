@@ -53,7 +53,7 @@ Write a program that is a number guessing program. Effectively, you are going to
 ## You need to know...
 You need to know the following concepts first:
 
-### if / elif / else statements
+* if, elif, else statements
 
 * Difference between int() and str()
 
@@ -75,6 +75,7 @@ In Psuedo code, one could write something like this...
 	if the guess is not equal to the answer,
 		write 'Sorry, wrong answer.'
 
+### In Python, these are the logical operands you can practice in this excercise:
 
 * '>' Greater than
 * '<' Less than
@@ -83,8 +84,21 @@ In Psuedo code, one could write something like this...
 * '=' Assigmnent
 * '==' Equal to (Can also be written 'is')
 * '!=' Is not equal to (Can also be written 'is not')
-* 'and' At least two statements are True (Boolean)
+* 'and' At least two statements are true (Boolean)
 * 'or' One or the other statement is true (Boolean)
+
+### In PowerShell, they look like this:
+
+* 'gt' Greater than
+* 'lt' Less than
+* 'ge' Greater than or equal
+* 'Le' Less than or equal
+* '=' Assignment
+* '-eq' Equal to
+* '-ne' Is not equal to
+* '-and' At least two statements are true (Boolean)
+* '-or' One or the other statement is true (Boolean)
+
 
 This example will terminate the program as soon as you either hit the right
 answer OR miss it. It will also not give you any input on whether you were
