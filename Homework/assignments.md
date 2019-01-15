@@ -126,14 +126,14 @@ Create a simple coffee machine interface. It should look something like this:
 
 	*	The best coffee in the world!	*
 
-	*	   Pick a beverage and size		*
+	*	  Pick a beverage and size	*
 
 
 	1. Mocaccino	2. Capuccino
 
-	3. Latte	    4. Coffee with milk
+	3. Latte	4. Coffee with milk
 
-	5. Coffee 		6. Chocolate
+	5. Coffee 	6. Chocolate
 
 Presume the user pressed 2..
 
@@ -177,15 +177,14 @@ On the other hand, remember to give change if they overpay.
 
 	*	The best coffee in the world!	*
 
-	*	   Pick a beverage and size		*
+	*	   Pick a beverage and size	*
 
 
 	1. Mocaccino	2. Capuccino
 
-	3. Latte	    4. Coffee with milk
+	3. Latte	4. Coffee with milk
 
-	5. Coffee 		6. Chocolate
-
+	5. Coffee 	6. Chocolate
 
 
 ## You need to know...
@@ -208,7 +207,6 @@ For instance, here is how you can use a while loop to count to 100:
 
 The while condition here is clear: While number is less than 100, increment number
 by 1, and print it out on the screen. Since number is 1 after the first iteration, the loop will go over it again and proceed until number is no longer less than 100. The loop will then break and any code after the while loop will execute. 
-
 
 You can also include negations in your conditional statement for the while loop. Including, you can declare more than one logical operator in the conditional statement but we will look in to that later on. For now, stick to one or two operators in your statements.
 
