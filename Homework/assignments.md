@@ -174,8 +174,8 @@ On the other hand, remember to give change if they overpay.
 	Change: 16 SEK
 
 	Your Large Capuccino is brewing. Thank you for your order!
-
-** The coffee machine gets ready for a new order, and forgets about the one that just happened.. ***
+## Bonus points if you fix this feature:
+** The coffee machine resets and gets ready for a new order, and forgets about the one that just happened. ***
 
 	*     The best coffee in the world!	*
 
