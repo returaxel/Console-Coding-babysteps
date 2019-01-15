@@ -221,7 +221,7 @@ Plain english, in the coffee machine when you check the payment from the custome
 
 You can use more than one while loop simultaneously. This is called 'nesting'.
 
-	while not True:
+	while True:
 		''' Your code here with the menu as an example.
 		while True is a statement that will run forever, known as an infinite loop. 
 		This is so because of the boolean statement is True. You are in fact
