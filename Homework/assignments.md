@@ -211,7 +211,7 @@ For instance, here is how you can use a while loop to count to 100:
 The while condition here is clear: While number is less than 100, increment number
 by 1, and print it out on the screen. Since number is 1 after the first iteration, the loop will go over it again and proceed until number is no longer less than 100. The loop will then break and any code after the while loop will execute. 
 
-You can also include negations in your conditional statement for the while loop. Including, you can declare more than one logical operator in the conditional statement but we will look in to that later on. For now, stick to one or two operators in your statements.
+You can also include negations in your conditional statement for the while loop. Including, you can declare more than two conditional statements in while loop, but we will look in to that later on. For now, stick to one condition in the conditional statement for the while loop.
 
 Plain english, in the coffee machine when you check the payment from the customer and make sure they don't underpay, you could say something like this:
 
