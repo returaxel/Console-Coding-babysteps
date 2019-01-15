@@ -124,9 +124,9 @@ In this assignment, we continue to develop the coffee machine we coded during th
 
 Create a simple coffee machine interface. It should look something like this:
 
-	*	The best coffee in the world!	*
+	*     The best coffee in the world!	*
 
-	*	  Pick a beverage and size	*
+	*        Pick a beverage and size	*
 
 
 	1. Mocaccino	2. Capuccino
@@ -175,9 +175,9 @@ On the other hand, remember to give change if they overpay.
 
 	Your Large Capuccino is brewing. Thank you for your order!
 
-	*	The best coffee in the world!	*
+	*     The best coffee in the world!	*
 
-	*	   Pick a beverage and size	*
+	*        Pick a beverage and size	*
 
 
 	1. Mocaccino	2. Capuccino
@@ -189,7 +189,10 @@ On the other hand, remember to give change if they overpay.
 
 ## You need to know...
 
-In order to complete this assignment, you need one or more loops.
+In order to complete this assignment, you will be a lot better of with the while loop.
+Although a for loop could suffice or even be better depending on how you design this program, 
+for now, we focus on the while loop. 
+
 So far, we've briefly looked in to the while loop. The while loop lets you 
 loop and repeate a block of code until your conditions are met, and you want to
 exit the loop. This is called iteration.
