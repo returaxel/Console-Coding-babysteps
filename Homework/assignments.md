@@ -89,10 +89,10 @@ In Psuedo code, one could write something like this...
 
 ### In PowerShell, they look like this:
 
-* 'gt' Greater than
-* 'lt' Less than
-* 'ge' Greater than or equal
-* 'Le' Less than or equal
+* '-gt' Greater than
+* '-lt' Less than
+* '-ge' Greater than or equal
+* '-le' Less than or equal
 * '=' Assignment
 * '-eq' Equal to
 * '-ne' Is not equal to
