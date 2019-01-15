@@ -157,7 +157,7 @@ something like this:
 	Please pay in the slot below.
 	Total: 35 SEK
 
-** User enters 40 and presses Enter **
+** User enters 30 and presses Enter **
 	
 	Sorry, you didnt pay enough. 
 	Please pay in the slot below.
@@ -171,9 +171,11 @@ On the other hand, remember to give change if they overpay.
 ** User enters 51 and presses Enter **
 
 	You paid 51.
-	Change: 1 SEK
+	Change: 16 SEK
 
 	Your Large Capuccino is brewing. Thank you for your order!
+
+** The coffee machine gets ready for a new order, and forgets about the one that just happened.. ***
 
 	*     The best coffee in the world!	*
 
