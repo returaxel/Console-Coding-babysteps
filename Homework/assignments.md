@@ -173,7 +173,7 @@ On the other hand, remember to give change if they overpay.
 	You paid 51.
 	Change: 16 SEK
 
-	Your Large Capuccino is brewing. Thank you for your order!
+	Your Capuccino is brewing. Thank you for your order!
 ## Bonus points if you fix this feature:
 ** The coffee machine resets and gets ready for a new order, and forgets about the one that just happened. ***
 
