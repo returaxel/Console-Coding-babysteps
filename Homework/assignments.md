@@ -221,7 +221,7 @@ Plain english, in the coffee machine when you check the payment from the custome
 		print('Please pay in the slot below.')
 		print('Total:', bvg_price ,'SEK')
 
-You can use more than one while loop simultaneously. This is called 'nesting'.
+You can use more than one while loop simultaneously. This is called nesting.
 
 	while True:
 		''' Your code here with the menu as an example.
