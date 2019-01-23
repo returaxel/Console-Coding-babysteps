@@ -1,4 +1,4 @@
-## Assignment 1:
+# Assignment 1:
 
 Write a program that asks for your firstname, lastname and phone number. 
 The program will then print it out on the screen. 
@@ -10,14 +10,14 @@ Example output:
 	>>> What's your phone number? 0701111222
 	Your name is Bruce Wayne and your phone number is 0701111222.
 
-# TIP!
-## Use input() to ask user for values. 
+### TIP!
+### Use input() to ask user for values. 
 Remember to declare a variable to store the input in. Example:
 
 	var = input('Your prompt for the user goes here! ') 
 whatever the user types is stored in 'var'.
 
-# String concatenation. 
+## String concatenation. 
 Keep in mind that you can't do math with strings and integers. 
 They're not friends like that. If you want to input a digit as a string, input() simply
 does this for you. If you want to take in the numbers as integers however, you need to say so.
@@ -36,9 +36,203 @@ the '+=' operand is equal to saying:
 	foo = foo + 'Matata'
 We just discard the 'foo = foo +...' way of doing it.
 
-# Keep it simple
+## Keep it simple
 	You need to break down the problem:
 	Ask for firstname, store it in a variable.
 	Ask for lastname, and store it in a separate (or add it to the previous..?) variable.
 	Ask for phone number, and store it in a variable. Or... add everything to one variable, as you go!
 
+
+# Assignment 2:
+
+In this assignment, you are going to write your first console application.
+
+## The goal
+Write a program that is a number guessing program. Effectively, you are going to guess the number and your program will tell you if you got it right. 
+
+## You need to know...
+You need to know the following concepts first:
+
+* if, elif, else statements
+
+* Difference between int() and str()
+
+## If you get stuck
+If you get stuck, Google is your friend. You can always reach me on WhatsApp if you get stuck, we'll work it through together. Remember that you need to use input() to take in values from the user, and that input() will take inputs as str(). To take input as integers, use
+	
+	# foo will be of datatype int()
+	foo = int(input('Your guess?'))
+
+	# bar will be of datatype str()
+	bar = input('Your guess?')
+
+## A hint
+In Psuedo code, one could write something like this...
+
+	answer is 190
+	guess is input 'Guess my number!'
+
+	if the guess is not equal to the answer,
+		write 'Sorry, wrong answer.'
+
+### In Python, these are the logical operators you can practice in this excercise:
+
+* '>' Greater than
+* '<' Less than
+* '>=' Greater than or equal
+* '<=' Less than or equal
+* '=' Assigmnent
+* '==' Equal to (Can also be written 'is')
+* '!=' Is not equal to (Can also be written 'is not')
+* 'and' At least two statements are true (Boolean)
+* 'or' One or the other statement is true (Boolean)
+
+### In PowerShell, they look like this:
+
+* '-gt' Greater than
+* '-lt' Less than
+* '-ge' Greater than or equal
+* '-le' Less than or equal
+* '=' Assignment
+* '-eq' Equal to
+* '-ne' Is not equal to
+* '-and' At least two statements are true (Boolean)
+* '-or' One or the other statement is true (Boolean)
+
+
+This example will terminate the program as soon as you either hit the right
+answer OR miss it. It will also not give you any input on whether you were
+too high or too low in your guess. Not very nice. Let's be more nice. 
+
+	answer is 190
+	guess is input 'Guess my number!'
+
+	if the guess is less than answer,
+		write 'Too low!'
+	but the guess is higher than answer,
+		write 'Too high'
+	otherwise,
+		write 'Correct!'
+
+See the difference? Now, you are using your if clause to give feedback, helping the user hit the right target.
+
+# Assignment 3:
+
+In this assignment, we continue to develop the coffee machine we coded during the class.
+
+## The goal
+
+Create a simple coffee machine interface. It should look something like this:
+
+	*     The best coffee in the world!	*
+
+	*        Pick a beverage and size	*
+
+
+	1. Mocaccino	2. Capuccino
+
+	3. Latte	4. Coffee with milk
+
+	5. Coffee 	6. Chocolate
+
+Presume the user pressed 2..
+
+	Pick the size for your Capuccino.
+
+	1. Small 20 SEK		2. Medium 30 SEK
+
+	3. Large 35 SEK		4. Huge	50 SEK
+
+
+Presume the user pressed 3..
+
+	Please pay in the slot below.
+	Total: 35 SEK
+
+Now, ask the user to type in the number your program is asking for.
+Remember to check if it's the right amount.
+As example, presume the user enters an amount too low.. it could look
+something like this:
+
+	Please pay in the slot below.
+	Total: 35 SEK
+
+** User enters 30 and presses Enter **
+	
+	Sorry, you didnt pay enough. 
+	Please pay in the slot below.
+	Total: 35 SEK
+
+On the other hand, remember to give change if they overpay.
+
+	Please pay in the slot below.
+	Total: 35 SEK
+
+** User enters 51 and presses Enter **
+
+	You paid 51.
+	Change: 16 SEK
+
+	Your Capuccino is brewing. Thank you for your order!
+## Bonus points if you fix this feature:
+** The coffee machine resets and gets ready for a new order, and forgets about the one that just happened. ***
+
+	*     The best coffee in the world!	*
+
+	*        Pick a beverage and size	*
+
+
+	1. Mocaccino	2. Capuccino
+
+	3. Latte	4. Coffee with milk
+
+	5. Coffee 	6. Chocolate
+
+
+## You need to know...
+
+In order to complete this assignment, you will be a lot better of with the while loop.
+Although a for loop could suffice or even be better depending on how you design this program, 
+for now, we focus on the while loop. 
+
+So far, we've briefly looked in to the while loop. The while loop lets you 
+loop and repeate a block of code until your conditions are met, and you want to
+exit the loop. This is called iteration.
+
+A while loop in Python is a very powerful tool that every Python programmer 
+will make use of in a variety of use cases. 
+
+For instance, here is how you can use a while loop to count to 100:
+
+	number = 0
+	while number < 100:
+		number += 1
+		print(number)
+
+
+The while condition here is clear: While number is less than 100, increment number
+by 1, and print it out on the screen. Since number is 1 after the first iteration, the loop will go over it again and proceed until number is no longer less than 100. The loop will then break and any code after the while loop will execute. 
+
+You can also include negations in your conditional statement for the while loop. Including, you can declare more than two conditional statements in while loop, but we will look in to that later on. For now, stick to one condition in the conditional statement for the while loop.
+
+Plain english, in the coffee machine when you check the payment from the customer and make sure they don't underpay, you could say something like this:
+
+	while not payment >= bvg_price:
+		print('Please pay in the slot below.')
+		print('Total:', bvg_price ,'SEK')
+
+You can use more than one while loop simultaneously. This is called nesting.
+
+	while True:
+		''' Your code here with the menu as an example.
+		while True is a statement that will run forever, known as an infinite loop. 
+		This is so because of the boolean statement is True. You are in fact
+		saying that as long as True is True, keep the loop going. '''
+
+		while not payment >= bvg_price:
+			''' This loop will proceed as an inner loop of the one above. 
+			If you for any reason want to exit the loop other than the statement 
+			you put when creating the loop, do so with: break '''
+			
+
+	
