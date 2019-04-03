@@ -14,27 +14,36 @@ Example output:
 ### Use input() to ask user for values. 
 Remember to declare a variable to store the input in. Example:
 
-	var = input('Your prompt for the user goes here! ') 
+	$inputVariable = Read-Host ('Your prompt for the user goes here! ') 
 whatever the user types is stored in 'var'.
 
 ## String concatenation. 
 Keep in mind that you can't do math with strings and integers. 
-They're not friends like that. If you want to input a digit as a string, input() simply
+They're not friends like that. If you want to input a digit as a string, Read-Host simply
 does this for you. If you want to take in the numbers as integers however, you need to say so.
 
-	var = int(input('What is 1+1? )) 
-In this case, the input will be stored in var and the type will be int().
+	[int]$inputVariable = Read-Host 'What is 1+1?'
+In this case, the input will be stored in var and the type will be int32.
+Be careful though - maybe you want your users to enter a decimal number? 
+In that case, it's better to read the input as a string, then convert it to 
+the right data type automatically, like this:
+
+	$inputVariable = Read-Host 'Give me a number'
+	$inputVariable = (0 + $inputVariable) # This converts it to double or int depending on the contents of $inputVariable automatically.
+
 String + string is True! To add content to a string, simply do:
 
-	foo = 'Hakuna '
-	foo += 'Matata'
-	print(foo)
-	>>> Hakuna Matata
+	$foo = 'Hakuna '
+	$foo += 'Matata'
+	Write-Host $foo
+	Hakuna Matata
+
 the '+=' operand is equal to saying:
 
-	foo = 'Hakuna '
-	foo = foo + 'Matata'
-We just discard the 'foo = foo +...' way of doing it.
+	$foo = 'Hakuna '
+	$foo = $foo + 'Matata'
+
+We just discard the '$foo = $foo +...' way of doing it.
 
 ## Keep it simple
 	You need to break down the problem:
@@ -42,8 +51,7 @@ We just discard the 'foo = foo +...' way of doing it.
 	Ask for lastname, and store it in a separate (or add it to the previous..?) variable.
 	Ask for phone number, and store it in a variable. Or... add everything to one variable, as you go!
 
-
-# Assignment 2:
+# Assignment 2 (string concatenation and variable mutation):
 
 In this assignment, you are going to write your first console application.
 
@@ -60,8 +68,8 @@ You need to know the following concepts first:
 ## If you get stuck
 If you get stuck, Google is your friend. You can always reach me on WhatsApp if you get stuck, we'll work it through together. Remember that you need to use input() to take in values from the user, and that input() will take inputs as str(). To take input as integers, use
 	
-	# foo will be of datatype int()
-	foo = int(input('Your guess?'))
+	# $foo will be of datatype int()
+	$foo = int(input('Your guess?'))
 
 	# bar will be of datatype str()
 	bar = input('Your guess?')
@@ -75,19 +83,7 @@ In Psuedo code, one could write something like this...
 	if the guess is not equal to the answer,
 		write 'Sorry, wrong answer.'
 
-### In Python, these are the logical operators you can practice in this excercise:
-
-* '>' Greater than
-* '<' Less than
-* '>=' Greater than or equal
-* '<=' Less than or equal
-* '=' Assigmnent
-* '==' Equal to (Can also be written 'is')
-* '!=' Is not equal to (Can also be written 'is not')
-* 'and' At least two statements are true (Boolean)
-* 'or' One or the other statement is true (Boolean)
-
-### In PowerShell, they look like this:
+### In PowerShell, these are the logical operators you can practice in this excercise:
 
 * '-gt' Greater than
 * '-lt' Less than
@@ -99,6 +95,16 @@ In Psuedo code, one could write something like this...
 * '-and' At least two statements are true (Boolean)
 * '-or' One or the other statement is true (Boolean)
 
+PowerShell also comes with a vast array of comparison operators such as:
+
+* -'like'
+* -'notlike'
+* -'match'
+* -'notmatch'
+* -'contains'
+* -'notcontains'
+* -'in'
+* -'notin'
 
 This example will terminate the program as soon as you either hit the right
 answer OR miss it. It will also not give you any input on whether you were
@@ -116,7 +122,7 @@ too high or too low in your guess. Not very nice. Let's be more nice.
 
 See the difference? Now, you are using your if clause to give feedback, helping the user hit the right target.
 
-# Assignment 3:
+# Assignment 3 (while loops, conditionals and datatypes):
 
 In this assignment, we continue to develop the coffee machine we coded during the class.
 
@@ -204,10 +210,11 @@ will make use of in a variety of use cases.
 
 For instance, here is how you can use a while loop to count to 100:
 
-	number = 0
-	while number < 100:
+	$number = 0
+	while ($number -lt 100) {
 		number += 1
 		print(number)
+	}
 
 
 The while condition here is clear: While number is less than 100, increment number
@@ -217,22 +224,82 @@ You can also include negations in your conditional statement for the while loop.
 
 Plain english, in the coffee machine when you check the payment from the customer and make sure they don't underpay, you could say something like this:
 
-	while not payment >= bvg_price:
-		print('Please pay in the slot below.')
-		print('Total:', bvg_price ,'SEK')
+	while (-not $payment -ge $bvg_price) {
+		write-host "Please pay in the slot below."
+		write-host "Total: $price 'SEK"
+	}
 
 You can use more than one while loop simultaneously. This is called nesting.
 
-	while True:
+	while ($true)
 		''' Your code here with the menu as an example.
 		while True is a statement that will run forever, known as an infinite loop. 
-		This is so because of the boolean statement is True. You are in fact
-		saying that as long as True is True, keep the loop going. '''
+		This is so because of the boolean statement is true. You are in fact
+		saying that as long as $true is $true, keep the loop going. '''
 
-		while not payment >= bvg_price:
-			''' This loop will proceed as an inner loop of the one above. 
+		while (-not $payment -ge $price) {
+			This loop will proceed as an inner loop of the one above. 
 			If you for any reason want to exit the loop other than the statement 
-			you put when creating the loop, do so with: break '''
-			
+			you put when creating the loop, do so with: break
+		}
 
 	
+# Assignment 4 (functions):
+
+## The Fibonacci sequence
+
+The Fibonacci sequence is a beautiful mathematical pattern that
+is expressed througout our world in different forms. We see it
+in physical objects and is ever present in nature such as plants, 
+animals and in the world of physics. It describes a beautiful pattern
+of incrementation. 
+
+The formula is pretty straight forward. Here's an example of a sequence:
+
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+
+The logic in the sequence is that the rightmost integer is the sum
+when adding the two last integers together. 
+
+1 + 2 = 3
+2 + 3 = 5
+3 = 5 = 8
+5 + 8 = 13
+
+You get the idea.
+
+
+This is a very common assinment in programming and it can be approached in 
+many different ways, some more efficient than others. This assignment 
+can teach you the different ways of solving a problem and can help you 
+consider the drawbacks of one solution compared to another, and you may find
+yourself wanting to improve it when you've gotten better at programming after a 
+while. 
+
+## The assignment
+
+Write a short function that will return a Fibonacci sequence of numbers starting from n, which is an argument passed to the function.
+
+The function must:
+
+* Validate the entered data (throw error if not integer given)
+* Start the sequence from n as given by argument and y length, for example:
+  Let's say you have a fibonacci function that returns an array of numbers. 
+  The function will start counting from n, and only keep counting y times.
+  
+Let's call the function like this:
+ 	
+	fib 5 5
+  
+The function returns:
+
+	5, 5, 10, 15, 25
+
+Let's call it like this instead:
+
+	fib 1 10
+
+The function returns:
+
+	1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+
