@@ -75,7 +75,7 @@ In Psuedo code, one could write something like this...
 	if the guess is not equal to the answer,
 		write 'Sorry, wrong answer.'
 
-### In Python, these are the logical operators you can practice in this excercise:
+### In PowerShell, these are the logical operators you can practice in this excercise:
 
 * '>' Greater than
 * '<' Less than
@@ -199,16 +199,16 @@ So far, we've briefly looked in to the while loop. The while loop lets you
 loop and repeate a block of code until your conditions are met, and you want to
 exit the loop. This is called iteration.
 
-A while loop in Python is a very powerful tool that every Python programmer 
-will make use of in a variety of use cases. 
+A while loop in PowerShell is a very powerful tool that a PowerShell programmer 
+cal make use of in a variety of use cases. 
 
 For instance, here is how you can use a while loop to count to 100:
 
-	number = 0
-	while number < 100:
-		number += 1
-		print(number)
-
+	$number = 0
+	while ($number -lt 100){
+		$number += 1
+		Write-Host $number
+	}
 
 The while condition here is clear: While number is less than 100, increment number
 by 1, and print it out on the screen. Since number is 1 after the first iteration, the loop will go over it again and proceed until number is no longer less than 100. The loop will then break and any code after the while loop will execute. 
@@ -217,22 +217,24 @@ You can also include negations in your conditional statement for the while loop.
 
 Plain english, in the coffee machine when you check the payment from the customer and make sure they don't underpay, you could say something like this:
 
-	while not payment >= bvg_price:
-		print('Please pay in the slot below.')
-		print('Total:', bvg_price ,'SEK')
+	while ($payment -lt $price){
+		Write-Host "Please pay in the slot below."
+		Write-Host "Total: $price SEK"
+	}
 
 You can use more than one while loop simultaneously. This is called nesting.
 
-	while True:
-		''' Your code here with the menu as an example.
+	while ($true){
+		<# Your code here with the menu as an example.
 		while True is a statement that will run forever, known as an infinite loop. 
 		This is so because of the boolean statement is True. You are in fact
-		saying that as long as True is True, keep the loop going. '''
-
-		while not payment >= bvg_price:
-			''' This loop will proceed as an inner loop of the one above. 
+		saying that as long as True is True, keep the loop going. #>
+		}
+		
+		while (-not payment -ge price){
+			<# This loop will proceed as an inner loop of the one above. 
 			If you for any reason want to exit the loop other than the statement 
-			you put when creating the loop, do so with: break '''
-			
+			you put when creating the loop, do so with: break #>
+		}
 
 	
