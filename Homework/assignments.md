@@ -84,21 +84,6 @@ In Psuedo code, one could write something like this...
 		write 'Sorry, wrong answer.'
 
 ### In PowerShell, these are the logical operators you can practice in this excercise:
-<<<<<<< HEAD
-
-* '>' Greater than
-* '<' Less than
-* '>=' Greater than or equal
-* '<=' Less than or equal
-* '=' Assigmnent
-* '==' Equal to (Can also be written 'is')
-* '!=' Is not equal to (Can also be written 'is not')
-* 'and' At least two statements are true (Boolean)
-* 'or' One or the other statement is true (Boolean)
-
-### In PowerShell, they look like this:
-=======
->>>>>>> ad26a61625fba5f4fb426f94d24058fce8f9e602
 
 * '-gt' Greater than
 * '-lt' Less than
