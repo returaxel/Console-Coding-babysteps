@@ -234,13 +234,13 @@ You can use more than one while loop simultaneously. This is called nesting.
 		while True is a statement that will run forever, known as an infinite loop. 
 		This is so because of the boolean statement is True. You are in fact
 		saying that as long as True is True, keep the loop going. #>
-		}
 		
 		while (-not payment -ge price){
 			<# This loop will proceed as an inner loop of the one above. 
 			If you for any reason want to exit the loop other than the statement 
 			you put when creating the loop, do so with: break #>
 		}
+	}
 
 	
 # Assignment 4 (functions):
